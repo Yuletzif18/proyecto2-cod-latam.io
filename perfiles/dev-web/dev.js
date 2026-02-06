@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   highlightCurrentSection();
   smoothScrollLinks();
+  initFlipCards();
 });
 
 /* Resalta sección activa en el navbar */
@@ -44,6 +45,22 @@ function smoothScrollLinks() {
           block: "start"
         });
       }
+    });
+  });
+}
+
+/* Flip cards on click */
+function initFlipCards() {
+  const flipCards = document.querySelectorAll(".flip-card");
+
+  flipCards.forEach(card => {
+    card.addEventListener("click", function(e) {
+      // No ejecutar si hacen clic en el link
+      if (e.target.closest(".card-link")) {
+        return;
+      }
+      
+      this.classList.toggle("flipped");
     });
   });
 }

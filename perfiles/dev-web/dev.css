@@ -94,7 +94,7 @@ body {
   transition: z-index 0.1s ease;
 }
 
-.flip-card:hover {
+.flip-card.flipped {
   z-index: 10;
 }
 
@@ -107,7 +107,7 @@ body {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -151,7 +151,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.flip-card:hover .flip-card-front i {
+.flip-card.flipped .flip-card-front i {
   opacity: 1;
   transform: scale(1.1) rotateY(180deg);
 }
