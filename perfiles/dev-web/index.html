@@ -11,13 +11,19 @@
   <!-- CSS específico Dev Web -->
   <link rel="stylesheet" href="dev.css">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- JS base -->
-  <script src="../../assets/js/main.js" defer></script>
+  <script src="../../assets/js/script.js" defer></script>
   <!-- JS específico Dev Web -->
   <script src="dev.js" defer></script>
 </head>
 
-<body>
+<body class="dev">
 
   <!-- ================= NAVBAR ================= -->
   <header>
@@ -29,8 +35,8 @@
       <a href="#experiencia">Experiencia</a>
       <a href="#contacto">Contacto</a>
 
-      <a href="../ciberseguridad/index.html" class="switch-profile">
-        Perfil Ciberseguridad
+      <a href="../../ciberseguridad/index.html" class="switch-profile">
+        <i class="fa-solid fa-shield"></i> Perfil Ciberseguridad
       </a>
     </nav>
   </header>
@@ -79,49 +85,65 @@
 
     <div class="projects-grid">
 
-      <article class="project-card">
-        <h3>Plantillas Inmobiliarias</h3>
-        <p>
-          Desarrollo de plantillas web modernas y responsivas utilizando
-          Nuxt.js 3 y Bootstrap 5, enfocadas en optimizar la experiencia de usuario (UX).
-        </p>
-        <a href="https://plantillas-para-inmobiliarias-dreamwell.vercel.app/" target="_blank">
-          Ver proyecto
-        </a>
-      </article>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Plantillas Inmobiliarias</h3>
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <div class="flip-card-back">
+            <p>Desarrollo de plantillas web modernas y responsivas utilizando Nuxt.js 3 y Bootstrap 5, enfocadas en optimizar la experiencia de usuario (UX).</p>
+            <a href="https://plantillas-para-inmobiliarias-dreamwell.vercel.app/" target="_blank" class="card-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <article class="project-card">
-        <h3>Sistema de Gestión de Mantenimiento Industrial</h3>
-        <p>
-          Aplicación web desarrollada con Next.js y React para la gestión de equipos
-          y órdenes de trabajo, incluyendo dashboard en tiempo real.
-        </p>
-        <a href="https://sistema-mantenimiento-github-io-git-main-yuletzi-s-projects.vercel.app/" target="_blank">
-          Ver proyecto
-        </a>
-      </article>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Sistema de Mantenimiento Industrial</h3>
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <div class="flip-card-back">
+            <p>Aplicación web desarrollada con Next.js y React para la gestión de equipos y órdenes de trabajo, incluyendo dashboard en tiempo real.</p>
+            <a href="https://sistema-mantenimiento-github-io.vercel.app/" target="_blank" class="card-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <article class="project-card">
-        <h3>Academia de Entrenamiento</h3>
-        <p>
-          Sistema de gestión académica desarrollado con Django y PostgreSQL,
-          que centraliza usuarios, entrenamientos y administración.
-        </p>
-        <a href="https://proyecto-academia-django-production.up.railway.app/" target="_blank">
-          Ver proyecto
-        </a>
-      </article>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Academia de Entrenamiento</h3>
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <div class="flip-card-back">
+            <p>Sistema de gestión académica desarrollado con Django y PostgreSQL, que centraliza usuarios, entrenamientos y administración.</p>
+            <a href="https://proyecto-academia-django-production.up.railway.app/" target="_blank" class="card-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <article class="project-card">
-        <h3>Escuela de Música Portato</h3>
-        <p>
-          Desarrollo de una aplicación web para el registro y agendamiento de
-          clases de música, siguiendo metodología SCRUM.
-        </p>
-        <a href="https://academiademusica.fly.dev/" target="_blank">
-          Ver proyecto
-        </a>
-      </article>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Escuela de Música Portato</h3>
+            <i class="fa-solid fa-music"></i>
+          </div>
+          <div class="flip-card-back">
+            <p>Desarrollo de una aplicación web para el registro y agendamiento de clases de música, siguiendo metodología SCRUM.</p>
+            <a href="https://academiademusica.fly.dev/" target="_blank" class="card-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar
+            </a>
+          </div>
+        </div>
+      </div>
 
     </div>
   </section>
@@ -147,14 +169,14 @@
     <h2>Contacto</h2>
 
     <ul class="contact-list">
-      <li>Email: <a href="mailto:yuletzif.2209@gmail.com">yuletzif.2209@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/yuletzi-figueroa" target="_blank">linkedin.com/in/yuletzi-figueroa</a></li>
-      <li>GitHub: <a href="https://github.com/Yuletzif18" target="_blank">github.com/Yuletzif18</a></li>
+      <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:yuletzif.2209@gmail.com">yuletzif.2209@gmail.com</a></li>
+      <li><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/yuletzi-figueroa" target="_blank">linkedin.com/in/yuletzi-figueroa</a></li>
+      <li><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/Yuletzif18" target="_blank">github.com/Yuletzif18</a></li>
     </ul>
 
     <div class="back-links">
       <a href="../../index.html">⬅ Volver al inicio</a>
-      <a href="../ciberseguridad/index.html">Perfil Ciberseguridad ➜</a>
+      <a href="../../ciberseguridad/index.html">Perfil Ciberseguridad ➜</a>
     </div>
   </section>
 
